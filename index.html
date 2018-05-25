@@ -76,7 +76,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/25/my-first-blog/">my first blog</a>
+      <a class="article-title" href="/2018/05/25/my-first-blog/">cs50 week1</a>
     </h1>
   
 
@@ -84,13 +84,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>1.執行 C 語言所寫的檔案。<br>建立新的檔案時要在檔名後面加上 .c 的副檔名，這樣電腦才知道那個檔案是 C 的檔案。<br>以 hello.c 這個檔案為例，要執行就要輸入下面的兩個指令：<br>其中的 clang 是 C language 的意思，它是編譯器，所以輸入 clang hello.c 就是叫它編譯 hello.c 這個檔案。<br>編譯後的程式的預設名字是 a.out，所以輸入 ./a.out 就是執行檔案的意思。<br>clang -o hello hello.c<br>./hello<br>其中-o 是 output，並指定 hello.c 編譯後輸出到 hello。<br>所以現在我們只要輸入 ./hello 就可以執行檔案了。<br>make hello<br>./hello<br>make 不是編譯器，它是一個程式，用來觸發編譯器 clang 執行。所以 make hello 就會自動從 hello.c 這個檔案建立執行檔 hello。<br>所以以後我們只要利用 make 就可以編譯檔案了，然後輸入 ./hello 就可以執行檔案。<br>2.command line 指令。<br>由於在 CS50 IDE 裡面需要使用 terminal 來執行許多指令，所以需要熟悉一些常用的指令。在 Linux 作業系統（因為 CS50 IDE 雲端電腦是用 Linux 作業系統）的 command line 指令，常見的有：</p>
+<p>-cd：(change directory) 用來在不同資料夾之間移動。. 表示目前所在的資料夾，.. 則表示上一層的資料夾。<br>-pwd：(present working directory) 用來印出目前所在資料夾的名稱。<br>-ls：(list) 用來列出所在資料夾內的所有檔案。<br>-mkdir：(make directory) 用來建立一個資料夾。<br>-cp：(copy) 用來複製一個檔案，在指令後面需要打兩個檔案名稱及副檔名，第一個是被複製的檔案名稱，第二個是要複製到的目的檔案名稱。如果要複製資料夾，要加上參數 –r (recursive)，才能夠一起複製資料夾內的所有檔案。<br>-rm：(remove) 用來刪除一個檔案。刪除檔案前 terminal 會再次確認是否要刪除檔案，如果想要略過確認問題，可以加上參數 -f (force)，如果要刪除資料夾可以加上參數 -r，如果想要刪除資料夾而且略過 terminal 的確認問題，可以加上參數 -rf，使用 -rf 一定要小心，刪除之後就無法回復了。<br>-rmdir：(remove directory) 用來刪除一個資料夾。<br>-mv：(move) 用來修改檔案的名稱，在指令後面需要打兩個檔案名稱及副檔名，第一個是原始檔案名稱，第二個是新的檔案名稱。</p>
+<ol start="3">
+<li>CS50 Library。<br>CS50 的團隊有寫一個函式庫 (Library)，用來幫助初學者快速學習 C 語言。只要在檔案的開始引入 CS50 Library 即可：<br>#include &lt;cs50.h&gt;<br>函式庫顧名思義就是有很多函式 (function) 的地方，在檔案一開始引入的 stdio.h （Standard Input and Output 的意思）也是函式庫：<br>#include &lt;stdio.h&gt;<br>stdio.h 內含 C 語言的基本函式，像是 printf 這個函式。要把字串印出來都會用到 printf （print formatted 的意思）。<br>C 語言在取得使用者的輸入值 (input)  這方面比較弱，所以 CS50 Library 裡包含一些可以取得使用者輸入值的函式。</li>
+</ol>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/25/my-first-blog/" data-id="cjhm0iten0001wfoi9hlsfew7" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/25/my-first-blog/" data-id="cjhm204uo000132oixuvb5z8a" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cs50/">cs50</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/week1/">week1</a></li></ul>
+
     </footer>
   </div>
   
@@ -133,7 +140,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/25/hello-world/" data-id="cjhm0itei0000wfoiwd7ouv0o" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/25/hello-world/" data-id="cjhm204uk000032oil8tlz8g4" class="article-share-link">Share</a>
       
       
     </footer>
@@ -153,9 +160,23 @@
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/cs50/">cs50</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/week1/">week1</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/cs50/" style="font-size: 10px;">cs50</a> <a href="/tags/week1/" style="font-size: 10px;">week1</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
@@ -174,7 +195,7 @@
       <ul>
         
           <li>
-            <a href="/2018/05/25/my-first-blog/">my first blog</a>
+            <a href="/2018/05/25/my-first-blog/">cs50 week1</a>
           </li>
         
           <li>
